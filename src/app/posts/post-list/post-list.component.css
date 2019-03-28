@@ -6,3 +6,21 @@
 .info-text{
     text-align: center;
 }
+
+mat-expansion-panel{
+  background-color: #000;
+  color: white;
+}
+
+mat-action-row{
+  border-color: white;
+}
+
+p{
+  color: #999;
+  margin-left: 20px;
+}
+
+button{
+  margin: 5px 5px 5px 5px;
+}

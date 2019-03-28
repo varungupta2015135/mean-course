@@ -1,9 +1,15 @@
 mat-card{
     margin: auto;
     margin-top: 1rem;
+    background-color: black;
 }
 
 mat-form-field,
 textarea{
     width: 100%;
+    color: white;
+}
+
+mat-label{
+  color: white;
 }
