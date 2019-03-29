@@ -5,7 +5,7 @@ const Post = require('./models/post');
 
 const app = express();
 
-mongoose.connect("mongodb+srv://varun:q0NI5hYxtETODhD6@cluster0-mudzy.mongodb.net/node-angular?retryWrites=true")
+mongoose.connect("mongodb+srv://varun:q0NI5hYxtETODhD6@cluster0-mudzy.mongodb.net/node-angular?retryWrites=true", {useNewUrlParser: true})
   .then(() => {
     console.log("Connected Successfully!");
   });
@@ -32,10 +32,6 @@ app.post('/api/posts', (req, res, next) => {
 });
 
 app.get('/api/posts', (req, res, next) => {
-    // const posts = [
-    //     {id: 'n1j3123b1jknb', title: 'First server-side post', content: 'Hope this works!!'},
-    //     {id: 'n1j31fdb1jknb', title: 'Second server-side post', content: 'Hope this works!!'}
-    // ];
     Post.find()
       .then(documents => {
         res.status(200).json({

@@ -16,6 +16,10 @@ mat-action-row{
   border-color: white;
 }
 
+mat-accordion{
+  margin-bottom: 30px;
+}
+
 p{
   color: #999;
   margin-left: 20px;
