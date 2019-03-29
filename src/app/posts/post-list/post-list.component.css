@@ -10,10 +10,14 @@
 mat-expansion-panel{
   background-color: #000;
   color: white;
+  border-style: solid;
+  border-color: white;
+  margin-bottom: 10px;
+  border-width: 1px;
 }
 
 mat-action-row{
-  border-color: white;
+  border-color: #999;
 }
 
 mat-accordion{
